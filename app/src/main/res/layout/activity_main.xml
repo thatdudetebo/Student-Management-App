@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- res/layout/activity_main.xml (or any layout) -->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/assigncolor"
+        android:gravity="center_horizontal"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="@color/assigncolor"
+            android:gravity="center"
+            android:text="Information Management System"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:elevation="8dp"/>
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Student Personal Information"
+            android:background="@color/assigncolor"
+            android:padding="20sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginBottom="8sp"
+            android:layout_marginTop="12dp"
+            android:gravity="center_horizontal"/>
+        <!--NAME-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:minWidth="300sp"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:paddingEnd="10sp"
+                android:text="NAME"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                />
+
+
+            <EditText
+                android:id="@+id/editTextName"
+                android:layout_width="200sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Name"
+                android:textAlignment="center"
+                android:inputType="text"/>
+
+        </LinearLayout>
+        <!--DEPT-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:minWidth="300sp"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:paddingEnd="10sp"
+                android:text="DEPT"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                />
+
+
+            <EditText
+                android:id="@+id/editTextDept"
+                android:layout_width="200sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Dept"
+                android:textAlignment="center"
+                android:inputType="text"/>
+
+        </LinearLayout>
+        <!--PHONE-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:minWidth="300sp"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:paddingEnd="10sp"
+                android:text="PHONE"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                />
+
+
+            <EditText
+                android:id="@+id/editTextPhone"
+                android:layout_width="200sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Phone"
+                android:textAlignment="center"
+                android:inputType="phone"/>
+
+        </LinearLayout>
+        <!--IDENTITY-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:minWidth="300sp"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:paddingEnd="10sp"
+                android:text="IDENTITY"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                />
+
+
+            <EditText
+                android:id="@+id/editTextIdentity"
+                android:layout_width="200sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="ID"
+                android:textAlignment="center"
+                android:inputType="number"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="280sp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="20sp"
+            android:layout_marginBottom="10sp"
+            >
+
+            <Button
+                android:id="@+id/register"
+                style="@android:style/Widget.Material.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10sp"
+                android:layout_weight="1"
+                android:text="REGISTER" />
+            <Button
+                android:id="@+id/viewall"
+                style="@android:style/Widget.Material.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="VIEW ALL"
+                android:layout_marginHorizontal="10sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="280sp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/update"
+                style="@android:style/Widget.Material.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="UPDATE"
+                android:layout_marginHorizontal="10sp"/>
+            <Button
+                android:id="@+id/delete"
+                style="@android:style/Widget.Material.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="DELETE"
+                android:layout_marginHorizontal="10sp"/>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
